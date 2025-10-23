@@ -68,8 +68,7 @@ Antes de iniciar, asegúrate de tener instalado:
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/camilolopez/reto-tecnico-banco.git
-cd reto-tecnico-banco
+git clone <repo_url>
 ```
 
 ### 2️⃣ Instalar dependencias
@@ -97,13 +96,9 @@ DATABASE_URL=mysql://usuario:password@localhost:3306/banco_productos
 
 ### 4️⃣ Crear la base de datos
 
-Ejecuta el script SQL incluido en `/scripts` para crear las tablas necesarias:
+Ejecuta el script SQL incluido en `/scripts` para crear la base de datos con sus tablas
 
-```bash
-mysql -u root -p banco_productos < scripts/schema.sql
-```
-
-El script crea las tablas:
+El script crea la base de datos y las tablas:
 - `usuarios`
 - `roles`
 - `productos`
@@ -195,3 +190,4 @@ Su uso es educativo y de demostración únicamente.
 ---
 
 > “La mejor manera de demostrar conocimiento es construyendo.”
+
